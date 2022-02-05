@@ -3,9 +3,9 @@ package com.globant.java.basic.model;
 import com.globant.java.basic.service.IPrint;
 
 public abstract class Teacher extends Person implements IPrint {
-    protected int id;
-    protected static int ultimateId;
-    protected Double baseSalary;
+    private int id;
+    private static int ultimateId;
+    private Double baseSalary;
 
     public Teacher(String name,String lastName,String identificationDocument, int age,Double baseSalary) {
         super(name,lastName,identificationDocument, age);

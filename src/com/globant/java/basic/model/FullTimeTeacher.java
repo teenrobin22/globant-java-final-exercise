@@ -23,7 +23,7 @@ public class FullTimeTeacher extends Teacher {
                 "\nEdad: " + this.getAge() +
                 "\nDocumento nacional de identidad: "+this.getIdentificationDocument()+
                 "\nModalidad: Full time"+
-                "\nSalario Base:"+ this.baseSalary+
+                "\nSalario Base:"+ this.getBaseSalary()+
                 "\nAños de experiencia: "+this.experienceYears+
                 "\nSalario Mensual:" +this.calculateSalary()+"\n";
     }

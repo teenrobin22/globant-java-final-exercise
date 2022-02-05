@@ -1,6 +1,8 @@
 package com.globant.java.basic.model;
 
-public class Student extends Person {
+import com.globant.java.basic.service.IPrint;
+
+public class Student extends Person implements IPrint {
     private int id;
     private static int ultimateId;
 
@@ -13,4 +15,8 @@ public class Student extends Person {
         return this.id;
     }
 
+    @Override
+    public String printData() {
+        return this.getName() + " "+this.getLastName();
+    }
 }

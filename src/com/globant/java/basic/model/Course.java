@@ -58,7 +58,7 @@ public class Course implements IPrint {
     public String printData() {
         String studentList = "";
         for (Student student: this.students){
-            studentList = studentList+"-"+student.getName()+" "+student.getLastName()+"\n";
+            studentList = studentList+"-"+student.printData()+"\n";
         }
         return "Curso:" + this.name + "\n" +
                 this.classRoom.printData() + "\n" +

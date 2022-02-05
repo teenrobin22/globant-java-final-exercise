@@ -24,7 +24,7 @@ public class PartTimeTeacher extends Teacher{
                 "\nEdad: " + this.getAge() +
                 "\nDocumento nacional de identidad: "+this.getIdentificationDocument()+
                 "\nModalidad: Part time"+
-                "\nSalario Base:"+ this.baseSalary+
+                "\nSalario Base:"+ this.getBaseSalary()+
                 "\nHoras activas por semana: "+this.activeHourWeek+
                 "\nSalario Mensual:" +this.calculateSalary()+"\n";
     }
